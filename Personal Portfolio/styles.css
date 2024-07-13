@@ -1,0 +1,81 @@
+:root {
+    --main-gold: linear-gradient(to right, rgba(245, 195, 130, 1), rgba(150, 86, 2, 0.5));
+     --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+  
+  html {
+    font-size: 1.5em;
+    font-family: poppins, sans;
+    margin: 0;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar {
+    top: 0;
+    position: fixed;
+    width: 100%
+  }
+  
+  #navbar ul, #navbar a {
+    color: var(--main-white);
+    /*border: 1px solid black;*/
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: rows;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    background-image: var(--main-gold)
+  }
+  
+  #navbar a {
+    justify-content: space-within;
+    text-decoration: none;
+  }
+  
+  section {
+    background-color: #ebe7e1;
+    width: 100vw;
+    height: 100vh
+  }
+  
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #welcome-section h1 {
+    font-size: 2.25em;
+    padding-bottom: 12px;
+  }
+  
+  #Welcome-section p {
+    color: var(--main-red);
+    font-weight: 0.4em;
+    font-style: italic;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);  /* Three columns, each 1 fraction of available space */
+    grid-gap: 10px;
+    gap: 10px;  /* Add spacing between grid items */
+  }
+  
+  .projects-grid > .project-image {
+    display: grid;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 200px;
+  }
